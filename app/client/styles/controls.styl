@@ -1,0 +1,114 @@
+.window-control-box
+  top 0
+  right 0
+  padding 0 10px
+  position absolute
+  -webkit-app-region no-drag
+  .window-control-button
+    height 19px
+    display inline
+    margin-left 3px
+    background-position center center
+    background-repeat no-repeat
+    transition background-color ease 0.15s
+
+  .window-control-close
+    width 45px
+    background-color #C75050
+    background-image url(img/control-close.png)
+    &:hover
+      background-color #E04343
+    &:active
+      background-color #993D3D
+
+  .window-control-minimize
+    width 25px
+    background-color transparent
+    background-image url(img/control-minimize.png)
+    &:hover
+      background-color #3665B3
+    &:active
+      background-color #3D6099
+
+  .window-control-dev
+    width 25px
+    background-color transparent
+    &:hover
+      background-color #3665B3
+    &:active
+      background-color #3D6099
+
+  .window-control-restore
+    width 25px
+    background-color transparent
+    background-image url(img/control-restore.png)
+    &:hover
+      background-color #3665B3
+    &:active
+      background-color #3D6099
+
+.btn, input[type="text"], input[type="password"]
+  font-family 'Open Sans', sans-serif
+  line-height 1.5em
+  font-size 1em
+  padding-top .4em
+  padding-bottom .4em
+  border none
+  color #fff
+  background #3c4043
+  position relative
+  transition background-color ease 0.25s
+  max-width 170px
+  -webkit-app-region no-drag
+
+input[type="text"]:focus, input[type="password"]:focus
+  background #484c50
+
+.input-username
+  padding 3px 0 3px 2.2em
+  border-radius 3px 3px 0 0
+
+.input-password
+  padding 3px 0 3px 2.2em
+  border-radius 0 0 3px 3px
+
+.btn
+  display inline-block
+  margin-bottom 0
+  padding 9px 14px
+  font-weight 300
+  text-align center
+  text-shadow none
+  letter-spacing 1px
+  white-space nowrap
+  background-image none
+  border 1px solid transparent
+  border-radius 3px
+  user-select none
+
+.btn-blue
+  color #fff
+  background-color #5BA4E5
+  border-color #4598e2
+  transition background 0.2s ease, border-color 0.2s ease
+  &:hover, &:focus, &:active
+    color #fff
+    background-color #2f8cde
+    border-color #207ac9
+
+.input-icon
+  position relative
+  display block
+  &:before
+    position absolute
+    top 50%
+    left 14px
+    font-size 1em
+    -webkit-transform translateY(-52%)
+    -ms-transform translateY(-52%)
+    transform translateY(-52%)
+    z-index 100
+
+.control-group
+  margin 20px 0
+  text-align center
